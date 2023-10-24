@@ -1,0 +1,299 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+}
+
+body {
+  background-image: url("Desktop\ -\ 5.png");
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+}
+
+table,
+th,
+td {
+  border: 1px solid #6bafff;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #6bafff;
+}
+
+h5 {font-family: 'Lora';
+font-size: 18px;
+color:#000000;
+text-align: center;}
+
+.header {
+  background-color: #6bafff;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#meuBotao {
+  background-color: #FFD739;
+  border: solid 1px;
+  color: #000000;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px; /* Adiciona bordas arredondadas */
+  cursor: pointer;
+}
+
+#meuBotao:hover {
+  background-color: #ffcc00; /* Cor amarela mais clara ao passar o mouse */
+}
+
+.logo {
+  width: 150px;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.btn-form {
+  height: 48px;
+  background-color: #fb3739;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+.custom-button {
+  cursor: pointer;
+  width: 200px;
+  border-radius: 15px;
+}
+
+.custom-button:hover {
+  background-color: #0281B8;
+}
+
+.menu li {
+  display: inline;
+  cursor: pointer;
+  margin: 0 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  color: white;
+}
+
+.sidebar-menu a {
+  text-decoration: none;
+  
+  color: white;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  text-align: center;
+  color: rgb(49, 49, 49);
+  font-weight: 200;
+  font-size: 18px;
+  padding: 0 20% 0 20%;
+}
+
+form {
+  display: flex;
+}
+
+.container1 input {
+  border: solid 1px;
+  min-width: 65vh;
+  height: 45px;
+  border-top-left-radius: 10px;
+}
+
+button {
+  height: 48px;
+  width: 50px;
+  background-color: #fb3739;
+  border: none;
+  font-size: 18px;
+  border: solid 1px;
+}
+
+.item1,
+.item2 {
+  display: flex;
+  flex-direction: row;
+  margin: 0 12% 10% 12%;
+}
+
+.item2 {
+  flex-direction: row-reverse;
+}
+
+.item1 .texto {
+  color: rgb(0, 46, 92);
+  padding-left: 70px;
+}
+
+.item2 .texto {
+  color: rgb(0, 46, 92);
+  padding-right: 70px;
+}
+
+.item1 p,
+.item2 p {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1.5px #000000;
+}
+
+.avaliacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.avaliacao input {
+  max-width: 25px;
+  max-height: 25px;
+}
+
+p {
+  display: inline-block;
+  font-size: 18px;
+  font-family: 'Lora', serif;
+}
+
+.item1 img {
+  object-fit: scale-down;
+  display: block;
+  width: 500px;
+  height: auto;
+}
+
+.item2 img {
+  object-fit: scale-down;
+  display: block;
+  width: 500px;
+  height: auto;
+}
+
+#embreve ul {
+  padding: 0;
+  font-size: 13px; 
+}
+
+#embreve li {
+  
+  margin-bottom: 10px; 
+  font-size: 18px; 
+  font-size: 13px;
+  font-weight: 150;
+}
+
+#embreve li::before {
+  content: "✓ "; ; 
+  color: #000000; 
+  font-size: 20px; 
+  left: -25px;
+  font-style: none;}
+
+.formulário {
+  text-align: center;
+  background-image: url("Desktop\ -\ 6.png");
+}
+
+.menu-toggle {
+  display: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-toggle .hamburger-icon {
+  font-size: 24px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.menu-toggle.active .hamburger-icon {
+  color: #fbbd39;
+}
+
+.desktop-menu {
+  display: block;
+}
+
+.sidebar-menu {
+  display: none;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  transition: left 0.3s;
+}
+
+.sidebar-menu.active {
+  left: 0;
+}
+
+.close-btn {
+  background-color: #fb3739;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.close-btn i {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+
+  .item1,
+  .item2 {
+    flex-direction: column;
+  }
+
+  .item1 .texto {
+    padding-left: 0;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .sidebar-menu {
+    display: block;
+  }
+}
